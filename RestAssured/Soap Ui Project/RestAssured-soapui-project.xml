@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="dd92e57f-ee4a-4236-8ff2-b87ba0f76bce" activeEnvironment="Default" name="RestAssured" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="9d863747-b46a-4750-9b32-8644f5722741" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://rahulshettyacademy.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://rahulshettyacademy.com</con:endpoint></con:endpoints><con:resource name="Json" path="/maps/api/place/add/json" id="7b957c54-b5f7-449d-af1a-7a8edff9e4eb"><con:settings/><con:parameters><con:parameter><con:name>key</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Json 1" id="2c0de69d-afe4-4387-bba1-e924c921f1dd" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:json="https://rahulshettyacademy.com/maps/api/place/add/json">json:Response</con:element></con:representation><con:request name="Request 1" id="06a555a0-7287-4492-a1c2-23cd82f7019c" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://rahulshettyacademy.com</con:endpoint><con:request>{
+  "location": {
+    "lat": -38.383494,
+    "lng": 33.427362
+  },
+  "accuracy": 50,
+  "name": "Frontline house",
+  "phone_number": "(+91) 983 893 3937",
+  "address": "29, side layout, cohen 09",
+  "types": [
+    "shoe park",
+    "shop"
+  ],
+  "website": "http://google.com",
+  "language": "French-IN"
+}
+</con:request><con:originalUri>https://rahulshettyacademy.com/maps/api/place/add/json</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="key" value="qaclick123" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>key</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="b1f4cce5-85f4-4272-9b37-a35954f2df06" name="Add Address"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="289e3a94-b1a0-4712-a076-41e8fceae70d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase-1" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="b438c2c9-10f2-4c0e-8902-c39a08accf06"><con:settings/><con:config service="https://rahulshettyacademy.com" methodName="Json 1" resourcePath="/maps/api/place/add/json" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="c3523f2a-c043-4363-ab4b-776e22bcedd6" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://rahulshettyacademy.com</con:endpoint><con:request>{
+  "location": {
+    "lat": -38.383494,
+    "lng": 33.427362
+  },
+  "accuracy": 50,
+  "name": "Frontline house",
+  "phone_number": "(+91) 983 893 3937",
+  "address": "29, side layout, cohen 09",
+  "types": [
+    "shoe park",
+    "shop"
+  ],
+  "website": "http://google.com",
+  "language": "French-IN"
+}
+</con:request><con:originalUri>https://rahulshettyacademy.com/maps/api/place/add/json</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="key" value="qaclick123" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
